@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="experiencia">
+    <h1>AGREGAR EXPERIENCIA</h1>
+    </div>
+    <div class="container">
+    
+    <form [formGroup]="formExp" (ngSubmit)="submitEXPADD(formExp.value)">
+     
+        
+        
+     
+        <div class="form-group">
+        <label for="exampleFormControlInput">EXPERIENCIA</label>
+        <input type="text" class="form-control" placeholder="Nombre Experiencia" formControlName="titleExp">
+      </div>
+    
+      <div class="form-group">
+        <label for="exampleFormControlInput">Fecha Inicio Experiencia</label>
+        <input type="text" class="form-control" placeholder="Fecha Inicio Experiencialabel" formControlName="startExp">
+      </div>
+    
+      <div class="form-group">
+        <label for="exampleFormControlInput">Fecha Fin Experiencialabel</label>
+        <input type="text" class="form-control" placeholder="Fecha Fin Experiencia" formControlName="endExp">
+      </div>
+    
+         
+      <div class="form-group">
+        <label for="exampleFormControlInput">Ciudad de Experiencia</label>
+        <input type="text" class="form-control" placeholder="Lugar de Experiencia" formControlName="locExp">
+      </div>
+         
+      <div class="form-group">
+        <label for="exampleFormControlInput">Imagen Experiencia </label>
+        <input type="text" class="form-control" placeholder="Url Imagen" formControlName="picExp">
+      </div>
+         
+    <button type="submit" class="btn btn-primary">AGREGAR</button>
+    
+    </form>
+    
+    </div>
+    
+    </div>
+    

@@ -1,0 +1,49 @@
+
+<app-acerca></app-acerca>
+<br>
+<div class="container">
+    <div class="addEducacion">
+    <h1>EDITAR Acerca</h1>
+    </div>
+    <div class="container">
+    
+    <form [formGroup]="formAcer" (ngSubmit)="submit(formAcer.value)">
+        <div class="form-group">
+            <label for="exampleFormControlInput">Id Acerca</label>
+            <input type="text" class="form-control" placeholder="ID Acerca" formControlName="idaAcer">
+          </div>
+     
+     
+        <div class="form-group">
+        <label for="exampleFormControlInput">TITULO Acerca</label>
+        <input type="text" class="form-control" placeholder="Nombre Acerca" formControlName="titleAcer">
+      </div>
+    
+      <div class="form-group">
+        <label for="exampleFormControlInput">Info Acerca</label>
+        <input type="text" class="form-control" placeholder="Info Acerca" formControlName="infoAcer">
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlInput">Img Acerca</label>
+        <input type="text" class="form-control" placeholder="Img Acerca" formControlName="imgAcer">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput">Nombre Acerca</label>
+        <input type="text" class="form-control" placeholder="Nombre Acerca" formControlName="nombreAcer">
+      </div>
+    
+
+         
+      
+         
+  
+         
+    <button type="submit" class="btn btn-primary">EDITAR</button>
+    
+    </form>
+    
+    </div>
+    
+    </div>
+    

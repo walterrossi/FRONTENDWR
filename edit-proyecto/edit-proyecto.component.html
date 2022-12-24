@@ -1,0 +1,41 @@
+
+<app-proyecto></app-proyecto>  <!--Aca levando educacion para poder ver y modificar -->
+
+<div class="container">
+  <div class="addEducacion">
+  <h1>EDITAR PROYECTO</h1>
+  </div>
+  <div class="container">
+  
+  <form [formGroup]="formProyecto" (ngSubmit)="submit(formProyecto.value)">
+   
+      <div class="form-group">
+          <label for="exampleFormControlInput">Id Proyecto</label>
+          <input type="text" class="form-control" placeholder="IdProyecto" formControlName="idProyecto">
+      </div>
+      
+   
+      <div class="form-group">
+      <label for="exampleFormControlInput">PROYECTO</label>
+      <input type="text" class="form-control" placeholder="Nombre Proyecto" formControlName="titleProyecto">
+    </div>
+  
+    <div class="form-group">
+      <label for="exampleFormControlInput">Fecha</label>
+      <input type="text" class="form-control" placeholder="fecha Proyecto" formControlName="fechaProyecto">
+    </div>
+  
+    <div class="form-group">
+      <label for="exampleFormControlInput">Url Imagen Proyecto</label>
+      <input type="text" class="form-control" placeholder="url" formControlName="imaProyecto">
+    </div>
+  
+       
+  <button type="submit" class="btn btn-primary">EDITAR PROYECTO</button>
+  
+  </form>
+  
+  </div>
+  
+  </div>
+  

@@ -1,0 +1,42 @@
+
+
+<div class="container">
+    <div class="addEducacion">
+    <h1>EDITAR HARD & SOFT</h1>
+    </div>
+    <div class="container">
+    
+    <form [formGroup]="formHard" (ngSubmit)="submite(formHard.value)">
+        <div class="form-group">
+            <label for="exampleFormControlInput">Id Hard & SOFT</label>
+            <input type="text" class="form-control" placeholder="ID hard & Soft" formControlName="idHard">
+          </div>
+     
+     
+        <div class="form-group">
+        <label for="exampleFormControlInput">TITULO HARD SOFT</label>
+        <input type="text" class="form-control" placeholder="Nombre hard & Soft" formControlName="titleHard">
+      </div>
+    
+      <div class="form-group">
+        <label for="exampleFormControlInput">Porcentaje Hard & Soft</label>
+        <input type="text" class="form-control" placeholder="Porcentaje Hard Soft" formControlName="porcHard">
+      </div>
+    
+
+         
+      
+         
+  
+         
+    <button type="submit" class="btn btn-primary">EDITAR</button>
+    
+    </form>
+    
+    </div>
+    
+    </div>
+    <br>
+    <br>
+    <br>
+    <app-hard></app-hard>

@@ -1,0 +1,51 @@
+
+<app-educacion></app-educacion>  <!--Aca levando educacion para poder ver y modificar -->
+
+<div class="container">
+  <div class="addEducacion">
+  <h1>EDITAR EDUCACION</h1>
+  </div>
+  <div class="container">
+  
+  <form [formGroup]="formEduEdi" (ngSubmit)="submit(formEduEdi.value)">
+   
+      <div class="form-group">
+          <label for="exampleFormControlInput">IdEdu</label>
+          <input type="text" class="form-control" placeholder="IdEdu" formControlName="idEdu">
+      </div>
+      
+   
+      <div class="form-group">
+      <label for="exampleFormControlInput">EDUCACION</label>
+      <input type="text" class="form-control" placeholder="Nombre Educacion" formControlName="titleEdu">
+    </div>
+  
+    <div class="form-group">
+      <label for="exampleFormControlInput">startEdu</label>
+      <input type="text" class="form-control" placeholder="startEdu" formControlName="startEdu">
+    </div>
+  
+    <div class="form-group">
+      <label for="exampleFormControlInput">endEdu</label>
+      <input type="text" class="form-control" placeholder="endEdu" formControlName="endEdu">
+    </div>
+  
+       
+    <div class="form-group">
+      <label for="exampleFormControlInput">descEdu</label>
+      <input type="text" class="form-control" placeholder="descEdu" formControlName="descEdu">
+    </div>
+       
+    <div class="form-group">
+      <label for="exampleFormControlInput">picEdu</label>
+      <input type="text" class="form-control" placeholder="picEdu" formControlName="picEdu">
+    </div>
+       
+  <button type="submit" class="btn btn-primary">EDITAR EDUCACION</button>
+  
+  </form>
+  
+  </div>
+  
+  </div>
+  

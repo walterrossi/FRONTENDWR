@@ -1,0 +1,22 @@
+<div class="educacion">
+
+  <!--  <div class="row align-item" *ngFor="let Educacion of Educacions">
+        <div>
+            {{Educacion.idEdu}}
+            {{Educacion.titleEdu}}
+        </div>-->
+
+<div class="container">
+<h1>BUSCAR EDUCACION POR ID </h1>
+  
+<input [(ngModel)]="campoId" #ctrl="ngModel" required>
+  
+  
+<p>Valor Id a Buscar: {{ campoId }}</p>
+  
+
+  
+<button type="submit" class="btn btn-primary" (click)="setValue()">Set value</button>
+
+</div>
+</div>

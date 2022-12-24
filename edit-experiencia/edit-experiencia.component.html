@@ -1,0 +1,50 @@
+<app-experiencia></app-experiencia>  <!--Aca levando educacion para poder ver y modificar -->
+
+<div class="container">
+  <div class="addEducacion">
+  <h1>EDITAR EXPERIENCIA</h1>
+  </div>
+  <div class="container">
+  
+  <form [formGroup]="formExp" (ngSubmit)="submit(formExp.value)">
+   
+      <div class="form-group">
+          <label for="exampleFormControlInput">Id Experiencia</label>
+          <input type="text" class="form-control" placeholder="IdExp" formControlName="idExp">
+      </div>
+      
+   
+      <div class="form-group">
+      <label for="exampleFormControlInput">EXPERIENCIA</label>
+      <input type="text" class="form-control" placeholder="Nombre Experiencia" formControlName="titleExp">
+    </div>
+  
+    <div class="form-group">
+      <label for="exampleFormControlInput">Fecha Inicio Experiencia</label>
+      <input type="text" class="form-control" placeholder="startExp" formControlName="startExp">
+    </div>
+  
+    <div class="form-group">
+      <label for="exampleFormControlInput">Fecha Fin Experiencia</label>
+      <input type="text" class="form-control" placeholder="endExp" formControlName="endExp">
+    </div>
+  
+       
+    <div class="form-group">
+      <label for="exampleFormControlInput">Ciudad Experiencia</label>
+      <input type="text" class="form-control" placeholder="locExp" formControlName="locExp">
+    </div>
+       
+    <div class="form-group">
+      <label for="exampleFormControlInput">Imagen Experiencia</label>
+      <input type="text" class="form-control" placeholder="picExp" formControlName="picExp">
+    </div>
+       
+  <button type="submit" class="btn btn-primary">EDITAR EXPERIENCIA</button>
+  
+  </form>
+  
+  </div>
+  
+  </div>
+  
