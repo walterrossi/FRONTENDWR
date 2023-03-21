@@ -1,0 +1,36 @@
+
+
+
+<div class="container">
+    <div class="addEducacion">
+    
+    </div>
+    <div class="container">
+   
+    <h1 class="eliminar">Eliminar Registro</h1>
+
+    <form [formGroup]="formHard" (ngSubmit)="submit(formHard.value)">
+     
+        <div class="form-group">  
+            
+            <label for="exampleFormControlInput">Id Hard & Soft</label>
+            <input type="text" class="form-control" placeholder="Coloque el Id a Eliminar" formControlName="idHard">
+        </div>
+        
+            
+     
+     
+   
+    
+     
+        
+    <button type="submit" class="btn btn-primary">ELIMINAR HARD & SOFT</button>
+    
+    </form>
+    
+    </div>
+    
+    </div>
+    <br>
+    <br>
+    <app-hard>    </app-hard>

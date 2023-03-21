@@ -1,0 +1,59 @@
+
+<app-acerca></app-acerca>
+
+<div class="container">
+    <div class="addEducacion">
+    
+    </div>
+    <div class="container">
+    
+    <h1 class="eliminar">Eliminar Registro</h1>
+
+    <form [formGroup]="formAcer" (ngSubmit)="submit(formAcer.value)">
+     
+        <div class="form-group">  
+            
+            <label for="exampleFormControlInput">Id Acera a Eliminar</label>
+            <input type="text" class="form-control" placeholder="Coloque el nro Id del elemnento a eliminar" formControlName="idaAcer">
+        </div>
+        
+            
+     
+     
+       <!-- <div class="form-group">
+        <label for="exampleFormControlInput">ELIMINAR</label>
+        <input type="text" class="form-control" placeholder="Nombre Educacion" formControlName="titleEdu">
+      </div>
+    
+      <div class="form-group">
+        <label for="exampleFormControlInput">startEdu</label>
+        <input type="text" class="form-control" placeholder="startEdu" formControlName="startDateEdu">
+      </div>
+    
+      <div class="form-group">
+        <label for="exampleFormControlInput">endEdu</label>
+        <input type="text" class="form-control" placeholder="endEdu" formControlName="endDateEdu">
+      </div>
+    
+         
+      <div class="form-group">
+        <label for="exampleFormControlInput">descEdu</label>
+        <input type="text" class="form-control" placeholder="descEdu" formControlName="descEdu">
+      </div>
+         
+      <div class="form-group">
+        <label for="exampleFormControlInput">picEdu</label>
+        <input type="text" class="form-control" placeholder="picEdu" formControlName="picEdu">
+      </div>  -->
+         
+    
+     
+        
+    <button type="submit" class="btn btn-primary">ELIMINAR</button>
+    
+    </form>
+    
+    </div>
+    
+    </div>
+    

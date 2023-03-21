@@ -1,0 +1,54 @@
+<div class="container">
+<div  class="educacion">
+    <div> <h2 style="text-align: left;">Eligir Id que Eliminar..</h2></div>
+    <h1 class="eliminar">Eliminar Registro</h1>
+    <!--<button type="button" class="btn btn-success" (click)="AgregarEducacion()" data-toggle="modal">Agregar Educacion</button>-->
+    <div> 
+     <!-- <p> Soy Walter Rossi,(Full Stack Developer Jr).</p>
+      <p> De profesion soy Ingeniero en Electronica.</p>
+      <p> Me gusta programar, soy autodidacta y me apasiona el desarrollo web.</p> -->
+     <p>  <p> <!--   Aca se levanta o leen valores de db-->
+    </div>   
+    
+    <div>
+  
+   
+    <div class="row align-item" *ngFor="let Educacion of Educacions">
+      
+       
+
+      <div class="container">
+        <div>
+        <a href="iniciar-sesion"><img class="icono_editar" src="assets/ico/boton-editar (2).png" alt="icono_editar"/></a>  
+        <a href="eliminar-educacion-id"><img class="icono_eliminar" src="assets/ico/boton-eliminar.png" alt="icono_eliminar"/></a>   
+        
+       
+    
+      
+      </div>
+        <div class="row">
+
+            <div class="col-sm">
+                {{Educacion.idEdu}}
+            </div>
+
+          <div class="col-sm">
+            {{Educacion.titleEdu}}
+          </div>
+          <div class="col-sm">
+            {{Educacion.startEdu}}
+          </div>
+          <div class="col-sm">
+            {{Educacion.endEdu}}
+          </div>
+          
+          <div class="col-sm">
+            {{Educacion.descEdu}}
+          </div>
+          <div class="col-sm">
+            <img src="{{Educacion.picEdu}}" alt="" width="30" height="30"> 
+          </div>
+        </div>
+      </div>
+    </div>
+    

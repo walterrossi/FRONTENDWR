@@ -1,0 +1,61 @@
+<div class="container">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,user-scalable=no">
+    
+   
+    <title> PORTFOLIO</title>
+   
+      
+  </head>
+       <!-- Programa-->
+
+      
+    
+    <div class="logoArgentinaPrograma"> <img class="logo_argentina_programa" src="/assets/image/logo_argentina_programa.png" alt="logo_argentina_programa"/></div>
+    <a routerLink="/paginanoeditable" (click)="logOut()"><img class="icono_login" src="assets/ico/user.png" alt="icono_login"/></a>
+    <a href="https://wa.me/543512305521"> <img class="icono_whatsapp" src="assets/ico/whatsapp_ico_negro.png" alt="icono_whatsapp"/>  </a>
+    <a href="https://www.instagram.com/waltermartinrossi/"><img class="icono_instagram" src="assets/ico/instagram_ico_negro.png" alt="icono_instagram"/> </a>
+    <a href="https://www.facebook.com/walter.rossi.127/"><img class="icono_facebook" src="assets/ico/facebook_ico_negro.png" alt="icono_facebook"/></a>
+    <a href="../../assets/Music/Música de Fondo Instrumental Inspiradora.mp3"><img class="icono_play" src="assets/ico/play.png" alt="icono_play"/>  </a>
+  
+    <!-- aria-label="..." on the control -->
+  
+  
+    
+   <div class="fondoWeb">
+
+    <img src="assets/image/fondoWeb2.jpg" alt="fondoWeb" class="img-fluid"/>
+    <div class="acerca">Id. {{Encabezados[0].idaAcer}}</div>
+  
+  </div>
+  
+    <div class="container-fluid">
+      <!--<div class="row align-item" *ngFor="let Encabezado of Encabezados">-->
+      
+     <div class="botonesImagen">
+      <a href="eliminar-encabezado"><img class="icono_eliminar" src="assets/ico/boton-eliminar.png" alt="icono_eliminar"/></a>   
+          <a href="login"  ><img class="icono_editar" src="assets/ico/boton-editar (2).png" alt="icono_editar"/></a>  
+          
+     </div> 
+
+      <img class="rounded-circle" src="{{Encabezados[0].imgAcer}}" alt="imagenWalter" width="960" height="200"/>
+       <!-- Aca seleccione el primer elemento de la tabla y puse la imagen, si no tenfo que hacer un recorrido for como en line anterior-->
+          <!--  
+          <img class="rounded-circle" src="https://i.im.ge/2022/08/20/OIzpJ0.Walter-Rossi.jpg" alt="imagenWalter" width="960" height="200"/>
+          -->
+            <!-- Content here -->
+     
+
+       <!--<div>
+            <a href="eliminar-encabezado"><img class="icono_eliminar" src="assets/ico/boton-eliminar.png" alt="icono_eliminar"/></a>   
+            <a href="iniciar-sesion"  ><img class="icono_editar" src="assets/ico/boton-editar (2).png" alt="icono_editar"/></a>  
+           
+          </div>   -->
+          </div>
+    <div><h2 class="nombrePostulante">{{Encabezados[0].nombreAcer}} </h2></div>
+         <div></div>
+         <div> </div>
+        </div>

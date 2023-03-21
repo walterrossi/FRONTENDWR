@@ -1,0 +1,72 @@
+
+<div class="container">
+
+
+  <div class="addEducacion">
+   
+      <div> <h2>Acerca de..</h2></div>
+    
+       
+       
+      <div class="row align-item" *ngFor="let acerca of acerca">
+    
+       <div>
+          <a href="eliminar-acerca"><img class="icono_eliminar" src="assets/ico/boton-eliminar.png" alt="icono_eliminar"/></a>     
+          <a href="edicion-acerca" ><img class="icono_editar" src="assets/ico/boton-editar (2).png" alt="icono_editar"/></a>  
+        
+      </div> 
+      
+        <!--<td>{{ acerca.idaAcer}}</td>-->
+        <h3>Id. {{ acerca.idaAcer}}</h3>
+        <h3>{{ acerca.titleAcer}}</h3>
+        <h3>{{ acerca.infoAcer }}</h3>
+
+        <form [formGroup]="formAcer" (ngSubmit)="submit(formAcer.value)">
+            <div class="form-group">
+                <label for="exampleFormControlInput" class="textInput">Id Acerca</label>
+                <input type="text" class="form-control" placeholder={{acerca.idaAcer}} formControlName="idaAcer">
+                
+                  </div>
+         
+         
+            <div class="form-group">
+            <label for="exampleFormControlInput" class="textInput">TITULO Acerca</label>
+            <input type="text" class="form-control" placeholder="{{acerca.titleAcer}}" formControlName="titleAcer">
+          </div>
+        
+          <div class="form-group">
+            <label for="exampleFormControlInput" class="textInput">Info Acerca</label>
+            <input type="text" class="form-control" placeholder="{{acerca.infoAcer}}" formControlName="infoAcer">
+          </div>
+    
+          <div class="form-group">
+            <label for="exampleFormControlInput" class="textInput">Img Acerca</label>
+            <input type="text" class="form-control" placeholder="{{acerca.imgAcer}}" formControlName="imgAcer">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput" class="textInput">Nombre Acerca</label>
+            <input type="text" class="form-control" placeholder="{{acerca.nombreAcer}}" formControlName="nombreAcer">
+          </div>
+        
+    
+             
+          
+             
+      
+             
+        <button type="submit" class="btn btn-primary">EDITAR</button>
+        
+        </form>
+        
+
+
+
+      </div>
+    </div>
+    </div>
+
+    <br>
+
+
+
+

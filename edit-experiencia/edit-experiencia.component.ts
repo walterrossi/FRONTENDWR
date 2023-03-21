@@ -1,8 +1,8 @@
 
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl,FormGroup } from '@angular/forms';
 import { Experiencia } from '../model/experiencia';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient,HttpErrorResponse } from '@angular/common/http';
 import { ExperienciaService } from '../service/experiencia.service';
 import { observable, Observable } from 'rxjs';
 import { Router } from '@angular/router';
@@ -26,11 +26,19 @@ export class EditExperienciaComponent {
   
   });
 
+  public experiencia: Experiencia[]=[];
+
 constructor(private http: HttpClient, private ExperienciaService:ExperienciaService,private router:Router)  {}
 
 
 ngOnInit(): void{
+this.getExperiencia();
 }
+
+
+public getExperiencia():void{
+this.ExperienciaService.getExperiencia().subscribe({next:(Response:Experiencia[])=>{this.experiencia=Response;},
+error:(error:HttpErrorResponse)=>{alert(error.message);}})}
 
 submit(formExp:any)  {   //le puse submiti porque si no me daba conflicto si se llama igual que otra.
   console.log(formExp);
@@ -50,6 +58,3 @@ submit(formExp:any)  {   //le puse submiti porque si no me daba conflicto si se 
 
 
 }
-
-
-

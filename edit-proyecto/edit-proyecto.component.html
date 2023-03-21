@@ -6,28 +6,28 @@
   <h1>EDITAR PROYECTO</h1>
   </div>
   <div class="container">
-  
+    <div class="row align-item" *ngFor="let proyecto of proy">
   <form [formGroup]="formProyecto" (ngSubmit)="submit(formProyecto.value)">
    
       <div class="form-group">
-          <label for="exampleFormControlInput">Id Proyecto</label>
-          <input type="text" class="form-control" placeholder="IdProyecto" formControlName="idProyecto">
+          <label for="exampleFormControlInput" class="textInput">Id Proyecto</label>
+          <input type="text" class="form-control" placeholder="{{proyecto.idProyecto}}" formControlName="idProyecto">
       </div>
       
    
       <div class="form-group">
-      <label for="exampleFormControlInput">PROYECTO</label>
-      <input type="text" class="form-control" placeholder="Nombre Proyecto" formControlName="titleProyecto">
+      <label for="exampleFormControlInput" class="textInput">PROYECTO</label>
+      <input type="text" class="form-control" placeholder="{{proyecto.titleProyecto}}" formControlName="titleProyecto">
     </div>
   
     <div class="form-group">
-      <label for="exampleFormControlInput">Fecha</label>
-      <input type="text" class="form-control" placeholder="fecha Proyecto" formControlName="fechaProyecto">
+      <label for="exampleFormControlInput" class="textInput">Fecha</label>
+      <input type="text" class="form-control" placeholder="{{proyecto.fechaProyecto}}" formControlName="fechaProyecto">
     </div>
   
     <div class="form-group">
-      <label for="exampleFormControlInput">Url Imagen Proyecto</label>
-      <input type="text" class="form-control" placeholder="url" formControlName="imaProyecto">
+      <label for="exampleFormControlInput" class="textInput">Url Imagen Proyecto</label>
+      <input type="text" class="form-control" placeholder="{{proyecto.imaProyecto}}" formControlName="imaProyecto">
     </div>
   
        

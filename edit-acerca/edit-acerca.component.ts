@@ -26,7 +26,7 @@ export class EditAcercaComponent implements OnInit{
     nombreAcer: new FormControl('')
     });
   
-
+   
   
   
   

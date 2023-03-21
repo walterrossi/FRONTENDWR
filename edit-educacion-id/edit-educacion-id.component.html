@@ -1,0 +1,28 @@
+<p>buscar-educacion works!</p>
+
+<div class="container">
+    <div class="addEducacion">
+
+
+    
+    <div class="container">
+        <form [formGroup]="formEdu" (ngSubmit)="submitBE(formEdu.value)">
+ 
+            <div class="form-group">
+                <label for="exampleFormControlInput">IdEdu</label>
+                <input type="text" class="form-control" placeholder="IdEdu" formControlName="idEdu">
+            </div>
+
+            <button type="submit" class="btn btn-primary">BUSCAR POR ID</button>
+         
+         <h1>{{formEdu}}</h1>
+
+        
+</form>
+
+
+
+
+</div>
+
+</div>

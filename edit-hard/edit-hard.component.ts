@@ -16,23 +16,27 @@ import { observable } from 'rxjs';
 })
 export class EditHardComponent implements OnInit{
 
-
-
   formHard= new FormGroup({
     idHard: new FormControl(''),
     titleHard: new FormControl(''),
     porcHard: new FormControl(''),
     });
   
-
+public hard:Hard[]=[];
   
 
 constructor(private http: HttpClient, private HardService:HardService, private router:Router)  {}
 
 
 ngOnInit(): void{
-
+this.cargarHard();
 }
+
+cargarHard(): void{
+  this.HardService.lista().subscribe(data=>{this.hard=data;})
+ 
+
+ }
 
 //este anda
 submite(formHard:any){
